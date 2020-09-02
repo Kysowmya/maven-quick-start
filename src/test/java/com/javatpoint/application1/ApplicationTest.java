@@ -11,15 +11,18 @@ public class ApplicationTest{
 @Test()
 public void test(){
 
-Sysout.out.println("Test");
+System.out.println("Test");
 }
 
 @Ignore()
 public void ignore(){
 
-Sysout.out.println("ignore");
+System.out.println("ignore");
 }
 
-
+@Before
+public void before() {
+	System.out.println("Before");
+}
 
 }
